@@ -1,0 +1,292 @@
+@font-face{
+    font-family: roboto_regular;
+    src: url('../fontawesome-free/Roboto/Roboto-Regular.ttf');
+}
+@font-face{
+    font-family: galada;
+    src: url('../fontawesome-free/Galada/Galada-Regular.ttf');
+}
+@font-face{
+    font-family: bangers;
+    src: url('..//fontawesome-free/Bangers/Bangers-Regular.ttf');
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 700;
+}
+.btn-xl{
+    font-size: 18px;
+    padding: 20px 40x;
+}
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover{
+    background-color: #fec810 !important;
+    border-color: #fec810 !important;
+    color: white;
+}
+
+#mainNav{
+    background-color: #212529;
+    font-family: 'roboto_regular';
+}
+#mainNav .navbar-toggler{
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: #fed136;
+}
+#mainNav .navbar-brand{
+    color: #fed136;
+    font-family: 'galada';
+}
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand.active{
+    color: #fec503;
+}
+#mainNav .navbar-nav .nav-item .nav-link{
+    font-size: 11pt;
+    font-weight: 400;
+    padding: 0.50em 5px;
+    letter-spacing: 1px;
+    color: white;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active ,#mainNav .navbar-nav .nav-item .nav-link:hover{
+    color: #fed136;
+}
+@media (min-width: 992px){
+    #mainNav{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        transition: padding-top 0.3s, padding-bottom 0.3s;
+        border: none;
+        background-color: transparent;
+    }
+    #mainNav .navbar-brand{
+        font-size: 17pt;
+        transition: all 0.3s;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link{
+        padding: 1.1em 1em !important;
+        font-size: 11pt;
+    }
+    #mainNav.navbar-shrink{
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: #212529;
+    }
+    #mainNav.navbar-shrink .navbar-brand{
+        font-size: 1.25em;
+        padding: 10px 0;
+    }
+}
+header.masthead{
+    text-align: center;
+    color: white;
+    background-image: url('../img/buahbuahan.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1365px 810px;
+}
+header.masthead .intro{
+    padding-top: 220px;
+    padding-bottom: 210px;
+}
+header.masthead .intro .intro-lead-in{
+    font-style: italic;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 40px;
+}
+header.masthead .intro .intro-heading{
+    font-family: 'roboto_regulars';
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+header.masthead .bg{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Section */
+@media (min-width: 720px){
+    section{
+        padding: 70px 50px;
+    }
+}
+
+section.page-section{
+    font-family: 'roboto_regular';
+}
+section h2{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+section .sub-title-sec{
+    font-style:italic; 
+    text-align:center;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+/* menu */
+section .container-menu{
+    padding: 20px;
+}
+section .content-inti{
+    display: grid;
+    grid-template-columns: 60% auto;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+section .isi-content{
+    padding-left: 10px;
+    margin: 120px 0 0 20px;
+    border-left: 6px solid rgba(0, 0, 0, 0.8);
+    height: 130px;
+    font-size: 13pt;
+}
+section .caption-menu{
+    padding-left: 10px;
+}
+section .img-content{
+    max-width: 100%;
+    height: 150px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+section .sub-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2 auto);
+}
+section .sub-content-isi{
+    margin: 10px 20px 0 20px;
+    display: grid;
+    grid-template-columns: 40% auto;
+    border-left: 6px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.8);
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: white;
+}
+section .isi{
+    margin-left: 20px;
+}
+
+/*Kontak*/
+section.page-section-kontak{
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'roboto_regular';
+    padding: 0;
+}
+section.page-section-kontak .container-fluid{
+    background: rgba(0, 0, 0, 0.9);
+    padding: 70px 30px;
+}
+section.page-section-kontak h5{
+    font-family: 'roboto_regular';
+    letter-spacing: 2px;
+}
+section.page-section-kontak h3{
+    font-family: 'bangers';
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+/* Responsiv Tablet*/
+@media screen and (max-width: 960px){
+    /* Intro */
+    #mainNav .navbar-brand{
+        font-size: 15pt;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link{
+        font-size: 10pt;
+    }
+    header.masthead .intro{
+        padding-top: 150px;
+        padding-bottom: 200px;
+    }
+    header.masthead .intro .intro-lead-in{
+        font-size: 17px;
+        font-style: italic;
+        line-height: 22px;
+        margin-bottom: 5px;
+        margin-top: 35px;
+   }
+    header.masthead .intro .intro-heading{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    section.page-section{
+        padding-top: 80px;
+    }
+    /* menu */
+    section .container-menu .content-inti{
+        display: inline;
+    }
+    section .isi-content{
+        border: none;
+        margin: 10px 0 25px;
+        text-align: justify;
+    }
+    section .content-inti{
+        padding: 10px;
+        margin-top: 0;
+    }
+    section .sub-content{
+        display: inline;
+    }
+    section .sub-content-isi{
+        margin-bottom: 20px;
+        height: auto;
+        font-size: 10pt;
+    }
+    section .img-content{
+        max-width: 100%;
+        height: auto;
+    }
+    .kontak{
+        margin-top: 30px;
+    }
+}
+
+/* Responsiv Handphone*/
+@media screen and (max-width: 500px){
+    /* Intro */
+    #mainNav .navbar-brand{
+        font-size: 15pt;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link{
+        font-size: 10pt;
+    }
+    header.masthead .intro{
+        padding: 130px 0;
+    }
+    header.masthead .intro .intro-lead-in{
+        font-size: 13px;
+        font-style: italic;
+        line-height: 22px;
+        margin-bottom: 5px;
+        margin-top: 35px;
+   }
+    header.masthead .intro .intro-heading{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    section.page-section-kontak .container-fluid{
+        padding: 75px 30px 15px;
+    }
+}
